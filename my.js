@@ -14,7 +14,7 @@ var map = new Datamap({
   element: container,
   fills: {
     SOLD: 'darkorange',
-    defaultFill: 'cadetblue',
+    defaultFill: '#008EAB',
   },
   data: {
     // For country codes: http://www.worldatlas.com/aatlas/ctycodes.htm
@@ -111,6 +111,7 @@ var map = new Datamap({
     popupTemplate: function (geo, data) {
       return open + geo.properties.name + (data ? ': ' + data.date : '') + close;
     },
+    highlightFillColor: '#5F9B0A',
   },
 });
 
