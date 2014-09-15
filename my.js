@@ -26,6 +26,86 @@ var map = new Datamap({
       fillKey: 'SOLD',
       date: d(7, 12, 2013),
     },
+    COL: {
+      fillKey: 'SOLD',
+      date: d(8, 1, 2013),
+    },
+    VEN: {
+      fillKey: 'SOLD',
+      date: d(8, 1, 2013),
+    },
+    DEU: {
+      fillKey: 'SOLD',
+      date: d(10, 15, 2013),
+    },
+    BRA: {
+      fillKey: 'SOLD',
+      date: d(10, 22, 2013),
+    },
+    PER: {
+      fillKey: 'SOLD',
+      date: d(10, 23, 2013),
+    },
+    URY: {
+      fillKey: 'SOLD',
+      date: d(10, 29, 2013),
+    },
+    MEX: {
+      fillKey: 'SOLD',
+      date: d(10, 30, 2013),
+    },
+    HUN: {
+      fillKey: 'SOLD',
+      date: d(11, 11, 2013),
+    },
+    GRC: {
+      fillKey: 'SOLD',
+      date: d(11, 14, 2013),
+    },
+    SRB: {
+      fillKey: 'SOLD',
+      date: d(11, 28, 2013),
+    },
+    MNE: {
+      fillKey: 'SOLD',
+      date: d(11, 29, 2013),
+    },
+    ITA: {
+      fillKey: 'SOLD',
+      date: d(12, 3, 2013),
+    },
+    CHL: {
+      fillKey: 'SOLD',
+      date: d(2, 19, 2014),
+    },
+    FRA: {
+      fillKey: 'SOLD',
+      date: d(7, 31, 2014),
+    },
+    MKD: {
+      fillKey: 'SOLD',
+      date: d(8, 14, 2014),
+    },
+    SLV: {
+      fillKey: 'SOLD',
+      date: d(8, 14, 2014),
+    },
+    CZE: {
+      fillKey: 'SOLD',
+      date: d(8, 21, 2014),
+    },
+    IND: {
+      fillKey: 'SOLD',
+      date: d(8, 26, 2014),
+    },
+    PAN: {
+      fillKey: 'SOLD',
+      date: d(8, 29, 2014),
+    },
+    NIC: {
+      fillKey: 'SOLD',
+      date: d(9, 9, 2014),
+    },
   },
   geographyConfig: {
     popupTemplate: function (geo, data) {
