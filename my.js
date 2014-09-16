@@ -13,10 +13,7 @@ var map = new Datamap({
     SOLD: '#FF9500',
     defaultFill: 'rgba(234, 239, 242, 0.5)',
   },
-  geographyConfig: {
-    borderWidth: 0,
-    borderColor: '#0095DD'
-  },
+  projection: 'equirectangular',
   data: {
     // For country codes: http://www.worldatlas.com/aatlas/ctycodes.htm
     ESP: {
@@ -113,6 +110,7 @@ var map = new Datamap({
       return open + geo.properties.name + (data ? ': ' + data.date : '') + close;
     },
     highlightFillColor: '#E66000',
-  },
+    borderColor: 'rgba(255,255,255,.2)'
+  }
 });
 
