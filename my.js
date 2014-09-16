@@ -1,6 +1,3 @@
-var container = document.getElementById('container');
-container.style.width = (window.innerWidth - 20) + 'px';
-container.style.height = window.innerHeight + 'px';
 
 function d (month, day, year) {
   // JavaScript dates assume January is month 0
@@ -13,8 +10,12 @@ var close = '</strong></div>';
 var map = new Datamap({
   element: container,
   fills: {
-    SOLD: 'darkorange',
-    defaultFill: '#008EAB',
+    SOLD: '#FF9500',
+    defaultFill: 'rgba(234, 239, 242, 0.5)',
+  },
+  geographyConfig: {
+    borderWidth: 0,
+    borderColor: '#0095DD'
   },
   data: {
     // For country codes: http://www.worldatlas.com/aatlas/ctycodes.htm
@@ -111,7 +112,7 @@ var map = new Datamap({
     popupTemplate: function (geo, data) {
       return open + geo.properties.name + (data ? ': ' + data.date : '') + close;
     },
-    highlightFillColor: '#5F9B0A',
+    highlightFillColor: '#E66000',
   },
 });
 
