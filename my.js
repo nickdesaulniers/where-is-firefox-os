@@ -15,6 +15,15 @@ xhr.send();
 function renderMap() {
   var countries = xhr.response;
 
+  // For browsers that don't support XHR2's `responseType`.
+  if (typeof countries === 'string') {
+    try {
+      countries = JSON.parse(countries);
+    } catch (e) {
+      throw 'Could not parse XHR response';
+    }
+  }
+
   // Transform each object so it matches the format `Datamap` expects.
   Object.keys(countries).forEach(function (key) {
     countries[key] = {
